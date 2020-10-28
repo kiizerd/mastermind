@@ -59,7 +59,7 @@ module INPUT
     else
       puts "didnt get em"
     end
-    guess = result
+    result
   end
 
   def handle_code

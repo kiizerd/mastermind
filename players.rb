@@ -24,21 +24,23 @@ class Player
   def to_color(input)
     result = []
     input.each do |i|
+      puts i
       case i.to_s
-      when "1" || "R"
+      when "1", "R"
         result.push "R".red
-      when "2" || "G"
+      when "2", "G"
         result.push "G".green
-      when "3" || "B"
+      when "3", "B"
         result.push "B".blue
-      when "4" || "Y"
+      when "4", "Y"
         result.push "Y".yellow
-      when "5" || "M"
+      when "5", "M"
         result.push "M".magenta
-      when "6" || "C"
+      when "6", "C"
         result.push "C".cyan
       end
     end
+    puts result
     result
   end
 end
