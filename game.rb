@@ -55,6 +55,7 @@ class Game
       
       feedback()
       puts `clear`
+      @intro.header
       update_display()
 
       if @guess == @code
@@ -71,23 +72,23 @@ class Game
 
   def game_end(winner)
     if winner == 1
-      puts "Code Maker wins!"
+      puts "\n Code Maker wins!"
     end
     if winner == 2
-      puts "Code Breaker wins!"
+      puts "\n Code Breaker wins!"
     end
   end
 
   def self.sleepy_dots
-    puts "."
+    puts "    ."
     sleep(0.1)
-    puts "..."
+    puts "   ..."
     sleep(0.1)
-    puts "....."
+    puts "  ....."
     sleep(0.1)
-    puts "..."
+    puts "   ..."
     sleep(0.1)
-    puts "."
+    puts "    ."
     sleep(0.1)
   end
 end

@@ -1,5 +1,3 @@
-require 'colorize'
-
 PEG = "\u25CF".encode
 
 class Intro
@@ -48,11 +46,11 @@ class Intro
     if choice == 1
       puts "[STARTING]"
       sleep(0.1)
-      puts "[GAME]"
+      puts "  [GAME]"
       Game.sleepy_dots()
-      puts "[MAKING]"
+      puts " [MAKING]"
       sleep(0.1)
-      puts "[CODE]"
+      puts "  [CODE]"
       Game.sleepy_dots()
       puts `clear`
     elsif choice == 2
@@ -65,28 +63,28 @@ class Intro
 end
 
 class String
-  def self.red
-    self.colorize(:red)
+  def red
+    "\e[31m#{self}\e[0m"
   end
 
-  def self.green
-    self.colorize(:green)
+  def green
+    "\e[32m#{self}\e[0m"
   end
 
-  def self.blue
-    self.colorize(:blue)
+  def blue
+    "\e[34m#{self}\e[0m"
   end
 
-  def self.yellow
-    self.colorize(:yellow)
+  def yellow
+    "\e[33m#{self}\e[0m"
   end
 
-  def self.magenta
-    self.colorize(:magenta)
+  def magenta
+    "\e[35m#{self}\e[0m"
   end
 
-  def self.cyan
-    self.colorize(:cyan)
+  def cyan
+    "\e[36m#{self}\e[0m"
   end
 end
 

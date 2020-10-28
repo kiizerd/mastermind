@@ -39,7 +39,7 @@ module INPUT
   def handle_guess
     letter = /^(R|G|B|Y|M|C){4,4}$/
     number = /^[1-6]{4,4}$/
-    puts "\tMake your guess.", "Enter 4 letters (R, G, B, Y, M, C) or numbers (1-6)."
+    puts "\n\tMake your guess.", "\nEnter 4 letters (R, G, B, Y, M, C) or numbers (1-6)."
     guess = gets.chomp.split('')
     while guess.length != 4
       puts "Error, wrong input length. 4 characters needed, try again."
