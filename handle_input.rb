@@ -27,8 +27,8 @@ module INPUT
         @codemaker = Human.new
       end
     when 2
-      @player1 = Human.new
-      @player2 = Human.new
+      @codebreaker = Human.new
+      @codemaker = Human.new
     end
   end
 
