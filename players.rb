@@ -24,7 +24,6 @@ class Player
   def to_color(input)
     result = []
     input.each do |i|
-      puts i
       case i.to_s
       when "1", "R"
         result.push "R".red
@@ -40,7 +39,6 @@ class Player
         result.push "C".cyan
       end
     end
-    puts result
     result
   end
 end
